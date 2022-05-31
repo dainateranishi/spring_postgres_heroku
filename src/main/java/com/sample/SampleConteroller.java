@@ -22,7 +22,7 @@ public class SampleConteroller {
 
 		model.addAttribute("userList", userList);
 
-		return "sample/helloWorld";
+		return "/sample/helloWorld";
 	}
 
 }
