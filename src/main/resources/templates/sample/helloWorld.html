@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.themeleaf.org"
-	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html
+  xmlns:th="http://www.themeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Sample</title>
-</head>
-<body>
-	<h1>Hello World!</h1>
-</body>
+    <title>Sample</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+
+	<table border="1">
+		<tr>
+			<th>id</th>
+			<th>名前</th>
+			<th>年齢</th>
+		</tr>
+
+    <div th:each="user : ${userList}">
+      <table th:object="${user}" border="1">
+		  <tr>
+			  <td th:text="*{id}"></td>
+			  <td th:text="*{name}"></td>
+			  <td th:text="*{age}"></td>
+		  </tr>
+		  <tr></tr>
+	  </table>
+    </div>
+  </body>
 </html>
