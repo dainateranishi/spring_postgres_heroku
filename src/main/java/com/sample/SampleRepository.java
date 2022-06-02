@@ -8,6 +8,13 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+/**
+ * サンプルアプリのRepositoryクラス.
+ * usersテーブルを操作する
+ * 
+ * @author teranishidaina
+ *
+ */
 @Repository
 public class SampleRepository {
 	
@@ -25,6 +32,11 @@ public class SampleRepository {
 	};
 	
 	
+	/**
+	 * userテーブルの全レコードをidの昇順で返す.
+	 * 
+	 * @return userテーブルに存在する全カラムのList
+	 */
 	public List<User> findAll(){
 		
 		String sql = "Select id, name, age From users Order By id;";

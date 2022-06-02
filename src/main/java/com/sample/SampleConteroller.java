@@ -8,6 +8,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * サンプルアプリのControllerクラス.
+ * 
+ * @author teranishidaina
+ *
+ */
 @Controller
 @RequestMapping("/sample")
 public class SampleConteroller {
@@ -15,6 +21,12 @@ public class SampleConteroller {
 	@Autowired
 	private SampleRepository repository;
 
+	/**
+	 * サンプルアプリの画面を返す.
+	 * 
+	 * @param model requestスコープ
+	 * @return サンプルアプリ画面へのパス
+	 */
 	@GetMapping("/")
 	public String getIndex(Model model) {
 

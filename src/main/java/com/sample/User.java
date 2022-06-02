@@ -2,6 +2,12 @@ package com.sample;
 
 import lombok.Data;
 
+/**
+ * userテーブルの1件のデータを表すDomainクラス.
+ * 
+ * @author teranishidaina
+ *
+ */
 @Data
 public class User {
 	
