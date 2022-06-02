@@ -4,6 +4,8 @@
 
 このリポジトリをクローンして手順に沿ってデプロイすれば，動く(?)と思います． ただ勉強記録用でもあるので，Spring のプロジェクトを作成するところから説明します．このリポジトリを clone した人は[ここ](#instructions-for-people-who-clone-this-repository)から読んでください。
 
+また Spring でプロジェクトの作成はできるが、Heroku へのデプロイ方法がわからない方は[こちら](#deploy-to-heroku)から読んでください.
+
 # Requirement
 
 実行環境を記載します．
